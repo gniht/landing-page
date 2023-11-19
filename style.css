@@ -1,38 +1,101 @@
 * {
   margin: 0px;
   padding: 0px;
+  white-space: nowrap;  
 }
 
 body {
-  display: grid;
-  grid-template-columns: 3fr repeat( 9, 1fr) 3fr;
-  gap: 10px;  
+  display: flex;
+  justify-content: center;
 }
 
-header {  
-  grid-column: 2 / 8;
-  display:inline-flex;
-  justify-content: space-between;
-  align-items: center;  
+.mainContent {
+  width: 70vw;
+  display: block;
+  justify-content: space-around;
+}
+
+header {
+  display: flex;
+  width: 70vw; 
+  height: fit-content;  
+  justify-content: space-between;   
+  background-color: #1F2937;
+  color: #F9FAF8; 
 }
 
 .logo {
-  grid-column: 2;
+  display: inline-block;  
+  font-size: 24px;  
+  margin: 10px 0;
+  
 }
 
 nav {
-  grid-column: 8;
-  gap: 10px;
+  display: block;
+  justify-content: space-around;
+  align-self: center;
+  margin: 0 30px 
 }
 
-.headerLinkOne {
-  grid-column: 6;      
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-.headerLinkTwo {
-  grid-column: 7;    
+.about {
+  width: 70vw;
+  display: flex;
+  background-color: #1F2937;  
+  justify-content: space-between;
+  /* flex-wrap: nowrap; */
 }
 
-.headerLinkThree {
-  grid-column: 8;    
+.about section {
+  display: block;   
+  width: fit-content;
+  height: 200px;
+  color: #E5E7EB;
+  background-color: #1F2937;   
+}
+
+.about .left {
+  display: block;
+  width: 35%;
+  height: 20%;
+}
+
+.about .right {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 300px;
+  height: 200px;
+}
+
+.hero {  
+  font-size: 48px;
+  color: #E5E7EB; 
+
+}
+
+.right .placeholder {
+  display: block;
+  color: #1F2937;
+  background-color: #caccd1;
+  width: 300px;
+  height: 150px;  
+  text-align: center;
+}
+
+button {
+  white-space:  nowrap;  
+  background-color: #3882f6;
+  margin: 10px;
+  padding: 10px 20px;
+  border-color: #1F2937;
+  border-radius: 10px;
+  width: fit-content;
 }
