@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  white-space: nowrap;  
+    
 }
 
 body {
@@ -10,24 +10,27 @@ body {
 }
 
 .mainContent {
-  width: 70vw;
-  display: block;
-  justify-content: space-around;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 header {
   display: flex;
-  width: 70vw; 
+  width: 100%; 
   height: fit-content;  
   justify-content: space-between;   
   background-color: #1F2937;
-  color: #F9FAF8; 
+  color: #F9FAF8;
+  padding: 20px 30px;
 }
 
 .logo {
   display: inline-block;  
   font-size: 24px;  
-  margin: 10px 0;
+  margin: 10px 0 10px 8%;
   
 }
 
@@ -35,65 +38,75 @@ nav {
   display: block;
   justify-content: space-around;
   align-self: center;
-  margin: 0 30px 
+  margin: 10px 8% 10px 0%;     
 }
 
 nav a {
   display: inline-block;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 0 0 20px;
 }
 
 .about {
-  width: 70vw;
+  width: 100%;
+  height: 300px;
   display: flex;
   background-color: #1F2937;  
-  justify-content: space-between;
-  /* flex-wrap: nowrap; */
+  justify-content: space-around;
+  margin: 0 10%;  
+  
 }
 
 .about section {
-  display: block;   
-  width: fit-content;
-  height: 200px;
+  display: flex;   
+  width: 40%;
+  height: 80%;
   color: #E5E7EB;
-  background-color: #1F2937;   
+  background-color: #1F2937;
+  text-wrap: wrap;
+  justify-content: space-around;
+
 }
 
 .about .left {
+  text-wrap: wrap;
   display: block;
-  width: 35%;
-  height: 20%;
+  width: 100%;
+  margin: 10px 1% 10px 8%;
+  
 }
 
 .about .right {
-  display: block;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  align-self: center;
-  width: 300px;
+  align-items: center;  
+  width: 100%;
   height: 200px;
+  margin: 10px 8% 10px 1%;
 }
 
-.hero {  
+.hero {   
   font-size: 48px;
+  text-wrap: wrap;
   color: #E5E7EB; 
 
 }
 
 .right .placeholder {
-  display: block;
-  color: #1F2937;
-  background-color: #caccd1;
-  width: 300px;
-  height: 150px;  
-  text-align: center;
+  display: flex;
+  color: #F9FAF8;
+  background-color: #777a84;
+  width: 100%;
+  padding: 0 20px;
+  height: 80%;  
+  justify-content: center;
+  align-items: center;
 }
 
 button {
   white-space:  nowrap;  
   background-color: #3882f6;
-  margin: 10px;
+  margin: 10px 0;
   padding: 10px 20px;
   border-color: #1F2937;
   border-radius: 10px;
