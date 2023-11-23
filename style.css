@@ -112,3 +112,33 @@ button {
   border-radius: 10px;
   width: fit-content;
 }
+
+h2 {
+  margin: 50px;
+  font-size: 2em;
+}
+
+.images {
+  justify-content: space-between;
+  justify-self: center;
+  display: flex;
+  width: 45%;
+}
+
+.box {
+  display: flex;
+  text-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+}
+
+.pictureBox {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #3882f6;
+  border-radius: 5%;  
+  
+}
