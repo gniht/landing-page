@@ -16,10 +16,18 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #1F2937;
 
+}
 header {
   display: flex;
-  width: 100%; 
+  width: 80%; 
   height: fit-content;  
   justify-content: space-between;   
   background-color: #1F2937;
@@ -34,7 +42,7 @@ header {
   
 }
 
-nav {
+nav {  
   display: block;
   justify-content: space-around;
   align-self: center;
@@ -48,7 +56,7 @@ nav a {
 }
 
 .about {
-  width: 100%;
+  width: 80%;
   height: 300px;
   display: flex;
   background-color: #1F2937;  
@@ -104,7 +112,9 @@ nav a {
 }
 
 button {
-  white-space:  nowrap;  
+  font-size: 18px;
+  white-space:  nowrap; 
+  color: #E5E7EB; 
   background-color: #3882f6;
   margin: 10px 0;
   padding: 10px 20px;
@@ -123,6 +133,7 @@ h2 {
   justify-self: center;
   display: flex;
   width: 45%;
+  margin: 10px 0 120px 0;
 }
 
 .box {
@@ -142,13 +153,21 @@ h2 {
   border-radius: 5%;    
 }
 
+.quoteSection {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: #E5E7EB;
+}
+
 blockquote {  
   width: 45%;
   text-wrap: wrap;
   font-size: 36px;
   font-style: italic;
+  background-color: #E5E7EB;
   color: #1f2937;
-  margin: 150px;
+  margin: 150px 0 120px 0;
 }
 
 .citation {
@@ -159,4 +178,50 @@ blockquote {
   padding-right: 50px;
   color: #1f2937;
 }
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3882f6;
+  color: #E5E7EB;
+  margin: 90px 0 90px 0;
+  width: 60%;
+  border-radius: 10px;
+  padding: 60px 80px;
+}
+
+
+
+.action .inner {
+  display: block;
+  margin: 0;
+}
+
+.inner h2 {
+  margin: 0;
+}
+
+.action button {
+  border: solid 3px #E5E7EB;
+  font-size: 18px;
+  border-radius: 8px;
+  white-space:  nowrap;
+  color: #E5E7EB;  
+  background-color: #3882f6;
+  padding: 10px 20px;  
+}
+
+footer {
+  width: 100vw;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  background-color: #1F2937;
+}
+footer p {
+  color: #E5E7EB;
+  margin: 40px 0;
+}
+
+
 
